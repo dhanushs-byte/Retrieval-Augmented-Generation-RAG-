@@ -1,0 +1,8 @@
+flowchart TD
+    A[User question] --> B[Embed question]
+    B --> C[Retrieve top-k chunks from Qdrant]
+    C --> D{Any chunks and best score above threshold?}
+    D -- No --> E[Return fallback without calling LLM]
+    D -- Yes --> F[Build context prompt]
+    F --> G[Call LLM]
+    G --> H[Grounded answer]

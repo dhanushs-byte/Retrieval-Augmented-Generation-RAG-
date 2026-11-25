@@ -1,0 +1,4 @@
+IT Support Guide
+For password resets, employees should use the self-service password reset page.
+If multi-factor authentication fails, contact the IT help desk with the device name and a short description.
+Standard support hours are Monday to Friday, 9 AM to 6 PM.

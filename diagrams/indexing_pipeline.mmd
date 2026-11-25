@@ -1,0 +1,6 @@
+flowchart LR
+    A[PDF / DOCX / TXT files] --> B[Load]
+    B --> C[Parse text + page/section metadata]
+    C --> D[Chunk with overlap]
+    D --> E[Sentence Transformer embeddings]
+    E --> F[Qdrant local vector store]
